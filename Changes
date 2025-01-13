@@ -1,6 +1,8 @@
 Revision history for shorten-sub-commands
 
 {{$NEXT}}
+
+0.0.7  2025-01-13T10:50:23+01:00
     - Bump dependency on as-cli-arguments
     - Add CI badge for each OS
     - Update copyright year
