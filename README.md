@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/shorten-sub-commands/workflows/test/badge.svg)](https://github.com/lizmat/shorten-sub-commands/actions)
+[![Actions Status](https://github.com/lizmat/shorten-sub-commands/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/shorten-sub-commands/actions) [![Actions Status](https://github.com/lizmat/shorten-sub-commands/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/shorten-sub-commands/actions) [![Actions Status](https://github.com/lizmat/shorten-sub-commands/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/shorten-sub-commands/actions)
 
 NAME
 ====
@@ -14,6 +14,7 @@ multi sub MAIN("foozle")  { say "foozle"  }
 multi sub MAIN("barabas") { say "barabas" }
 multi sub MAIN("bazzie")  { say "bazzie"  }
 use shorten::sub::commands &MAIN;
+```
 
     $ raku frobnicate foo
     foozle
@@ -21,12 +22,11 @@ use shorten::sub::commands &MAIN;
     'ba' is ambiguous, matches: barabas bazzie
     $ raku frobnicate bar
     barabas
-```
 
 DESCRIPTION
 ===========
 
-shorten::sub::commands is a helper module intended to be used for command-line application that have a sub-command structure (in which the first positional parameter indicates what needs to be done, and there is a separate candidate to handle execution of that command).
+The `shorten::sub::commands` distribution provides a helper module intended to be used for command-line applications that have a sub-command structure (in which the first positional parameter indicates what needs to be done, and there is a separate candidate to handle execution of that command).
 
 When used **after** all `MAIN` candidates have been defined, it will add another candidate that will allow to shorten the command names to be as short as possible (e.g. just "foo" in the example above, or even just "f" as there is only one candidate that starts with "f". Numeric subcommands are also supported, but they will be matched as strings (so `4` on the command line will match `42` in the signature).
 
@@ -39,10 +39,12 @@ Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/shorten-sub-commands . Comments and Pull Requests are welcome.
 
+If you like this module, or what I'm doing more generally, committing to a [small sponsorship](https://github.com/sponsors/lizmat/) would mean a great deal to me!
+
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2022 Elizabeth Mattijsen
+Copyright 2022, 2025 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

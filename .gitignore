@@ -1,3 +1,4 @@
 .precomp/
 /shorten-sub-commands-*
 /releases/
+*.rakucov

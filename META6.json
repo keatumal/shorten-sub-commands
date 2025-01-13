@@ -6,7 +6,7 @@
   "build-depends": [
   ],
   "depends": [
-    "as-cli-arguments:ver<0.0.4>:auth<zef:lizmat>"
+    "as-cli-arguments:ver<0.0.8+>:auth<zef:lizmat>"
   ],
   "description": "allow partial specification of sub-commands",
   "license": "Artistic-2.0",
