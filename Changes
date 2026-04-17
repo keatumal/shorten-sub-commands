@@ -1,6 +1,8 @@
 Revision history for shorten-sub-commands
 
 {{$NEXT}}
+
+0.0.8  2026-04-17T14:18:36+02:00
     - Fix oops in documentation, Flin++
     - Bump dependency on as-cli-arguments
     - Full coverage testing
