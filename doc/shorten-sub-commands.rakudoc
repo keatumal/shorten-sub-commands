@@ -12,7 +12,7 @@ shorten-sub-commands - allow partial specification of sub-commands
 multi sub MAIN("foozle")  { say "foozle"  }
 multi sub MAIN("barabas") { say "barabas" }
 multi sub MAIN("bazzie")  { say "bazzie"  }
-use shorten::sub::commands &MAIN;
+use shorten-sub-commands &MAIN;
 
 =end code
 
@@ -29,7 +29,7 @@ barabas
 
 =head1 DESCRIPTION
 
-The C<shorten::sub::commands> distribution provides a helper module
+The C<shorten-sub-commands> distribution provides a helper module
 intended to be used for command-line applications that have a
 sub-command structure (in which the first positional parameter
 indicates what needs to be done, and there is a separate candidate
