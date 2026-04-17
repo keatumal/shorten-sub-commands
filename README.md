@@ -13,7 +13,7 @@ SYNOPSIS
 multi sub MAIN("foozle")  { say "foozle"  }
 multi sub MAIN("barabas") { say "barabas" }
 multi sub MAIN("bazzie")  { say "bazzie"  }
-use shorten::sub::commands &MAIN;
+use shorten-sub-commands &MAIN;
 ```
 
     $ raku frobnicate foo
@@ -26,7 +26,7 @@ use shorten::sub::commands &MAIN;
 DESCRIPTION
 ===========
 
-The `shorten::sub::commands` distribution provides a helper module intended to be used for command-line applications that have a sub-command structure (in which the first positional parameter indicates what needs to be done, and there is a separate candidate to handle execution of that command).
+The `shorten-sub-commands` distribution provides a helper module intended to be used for command-line applications that have a sub-command structure (in which the first positional parameter indicates what needs to be done, and there is a separate candidate to handle execution of that command).
 
 When used **after** all `MAIN` candidates have been defined, it will add another candidate that will allow to shorten the command names to be as short as possible (e.g. just "foo" in the example above, or even just "f" as there is only one candidate that starts with "f". Numeric subcommands are also supported, but they will be matched as strings (so `4` on the command line will match `42` in the signature).
 
@@ -44,7 +44,7 @@ If you like this module, or what I'm doing more generally, committing to a [smal
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2022, 2025 Elizabeth Mattijsen
+Copyright 2022, 2025, 2026 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

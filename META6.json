@@ -5,19 +5,28 @@
   ],
   "build-depends": [
   ],
-  "depends": [
-    "as-cli-arguments:ver<0.0.8+>:auth<zef:lizmat>"
-  ],
+  "depends": {
+    "runtime": {
+      "requires": [
+        "as-cli-arguments:ver<0.0.9+>:auth<zef:lizmat>"
+      ]
+    }
+  },
   "description": "allow partial specification of sub-commands",
   "license": "Artistic-2.0",
   "name": "shorten-sub-commands",
-  "perl": "6.d",
   "provides": {
     "shorten-sub-commands": "lib/shorten-sub-commands.rakumod"
   },
+  "raku": "6.d",
   "resources": [
   ],
   "source-url": "https://github.com/lizmat/shorten-sub-commands.git",
+  "support": {
+    "bugtracker": "https://github.com/lizmat/shorten-sub-commands/issues",
+    "email": "liz@raku.rocks",
+    "source": "https://github.com/lizmat/shorten-sub-commands.git"
+  },
   "tags": [
     "CLI",
     "MAIN"

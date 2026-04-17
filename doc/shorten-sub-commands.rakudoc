@@ -7,24 +7,20 @@ shorten-sub-commands - allow partial specification of sub-commands
 =head1 SYNOPSIS
 
 =begin code :lang<raku>
-
 # in script "frobnicate"
 multi sub MAIN("foozle")  { say "foozle"  }
 multi sub MAIN("barabas") { say "barabas" }
 multi sub MAIN("bazzie")  { say "bazzie"  }
 use shorten-sub-commands &MAIN;
-
 =end code
 
 =begin output
-
 $ raku frobnicate foo
 foozle
 $ raku frobnicate ba
 'ba' is ambiguous, matches: barabas bazzie
 $ raku frobnicate bar
 barabas
-
 =end output
 
 =head1 DESCRIPTION
@@ -58,7 +54,7 @@ deal to me!
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2022, 2025 Elizabeth Mattijsen
+Copyright 2022, 2025, 2026 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

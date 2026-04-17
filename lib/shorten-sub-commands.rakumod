@@ -1,4 +1,4 @@
-use as-cli-arguments:ver<0.0.8+>:auth<zef:lizmat>;
+use as-cli-arguments:ver<0.0.9+>:auth<zef:lizmat>;
 
 my sub meh($message) { exit note $message }
 
